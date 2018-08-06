@@ -16,7 +16,7 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     };
-    this.videoSearch('coding tutorial');
+    this.videoSearch('React JS tutorial');
   }
 
   videoSearch(term) {
@@ -33,14 +33,15 @@ class App extends Component {
     const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
 
     return (
-      <div>
-        <SearchBar onSearchTermChange={videoSearch} />
-        <VideoDetail video={this.state.selectedVideo} />
-        <VideoList
-          onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-          videos={this.state.videos}
-        />
-      </div>
+        <div className="main-container">
+          <div className="main-title">Learn React with the Youtube community</div>
+          <SearchBar onSearchTermChange={videoSearch} />
+          <VideoDetail video={this.state.selectedVideo} />
+          <VideoList
+            onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+            videos={this.state.videos}
+          />
+        </div>
     );
   }
 }

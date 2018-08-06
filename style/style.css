@@ -1,10 +1,27 @@
-.search-bar {
-  margin: 20px;
+.main-container {
+  background-image: url('../images/ash-edmonds-510566-unsplash.jpg');
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-title {
   text-align: center;
+  color: white;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 30px;
+  font-family: 'Muli', sans-serif;
+}
+
+.search-bar {
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
 }
 
 .search-bar input {
-  width: 75%;
+  width: 60vw;
 }
 
 .video-item img {
@@ -16,6 +33,11 @@
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  color: white;
+}
+
+.list-group {
+  margin-bottom: 10px !important;
 }
 
 .list-group-item {
@@ -24,4 +46,12 @@
 
 .list-group-item:hover {
   background-color: #eee;
+}
+
+.media-body {
+  padding: 0px 5px;
+}
+
+.details-title {
+  font-weight: bold;
 }
